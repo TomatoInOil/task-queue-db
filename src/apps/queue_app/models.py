@@ -27,5 +27,9 @@ class TaskQueue(models.Model):
         verbose_name="Дата обновления",
     )
 
+    class Meta:
+        verbose_name = "Задача"
+        verbose_name_plural = "Задачи"
+
     def __str__(self):
         return self.task_name
